@@ -1,4 +1,9 @@
 # red-black-3d-parallel
-Assignment for the parallel programming course taught in the 3rd year of the СMC
+Задание по курсу параллельных вычислений, читаемому на ВМК в 5 семестре
 
-Bash commands hot to run files can be found [here](https://github.com/Alexkkir/red-black-3d-parallel/blob/main/how%20to%20run.md)
+Команды для запуска программ можно найти [здесь](https://github.com/Alexkkir/red-black-3d-parallel/blob/main/how%20to%20run.md)
+
+### Результаты 
+Удалось существенно увеличить скорость программы (до 8 раз). Ниже представлены графики, показывающие зависимость времени выполнения от количества потоков
+![openmp](openmp.jpg)
+![mpi](mpi.jpg)
