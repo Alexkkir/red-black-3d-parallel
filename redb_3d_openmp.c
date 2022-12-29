@@ -39,9 +39,9 @@ int main(int an, char **as)
     return 0;
 }
 
-void init()
+void init() // для каждого процесса будут загружена страница памяти, содержащая используемые элементы
 {
-#pragma omp for private(i, j, k) schedule(static) collapse(3)
+#pragma omp for private(i, j, k) schedule(static) collapse(3) 
     for (i = 0; i <= N - 1; i++)
         for (j = 0; j <= N - 1; j++)
             for (k = 0; k <= N - 1; k++)
